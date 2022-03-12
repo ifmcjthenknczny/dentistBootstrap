@@ -1,0 +1,66 @@
+// font-family: 'Italianno', cursive;
+// font-family: 'Mr De Haviland', cursive;
+// font-family: 'Petemoss', cursive;
+// font-family: 'Waterfall', cursive;
+
+//min-width
+$sizes: ('s': 576px,
+    'm': 768px,
+    'l': 992px,
+    'xl': 1200px,
+    'xxl': 1400px);
+
+
+body {
+    background-color: mix(white, beige);
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 300;
+    font-family: 'Italianno', cursive;
+
+    @media only screen and (max-width: map-get($sizes, 's')) {
+        font-size: 2em;
+    }
+
+    // font-family: 'Mr De Haviland', cursive;
+    // font-family: 'Petemoss', cursive;
+    // font-family: 'Waterfall', cursive;
+}
+
+h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.container {
+    background-color: white;
+}
+
+@mixin map {
+    height: 300px;
+    width: 400px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    @include map;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    @include map;
+}
+
+iframe {
+    @include map;
+}
+
+.about__description {
+    text-align: justify;
+    text-justify: inter-word;
+}
