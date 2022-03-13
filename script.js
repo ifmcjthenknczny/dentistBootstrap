@@ -1,8 +1,11 @@
-// $("body").onload(function() {
-//     $(".header").animate({
-//         left: '250px',
-//         opacity: '0.5',
-//         height: '150px',
-//         width: '150px'
-//     });
-// });
+
+$("body").ready(function() {
+    $(".header").hide();
+    $(".about").hide();
+    $(".footer").hide();
+    $(".copyrights").hide();
+    $(".header").slideDown(1000);
+    $(".about").delay(800).fadeIn(1000);
+    $(".footer").delay(1600).slideDown(1000);
+    $(".copyrights").delay(2000).fadeIn(500);
+});
