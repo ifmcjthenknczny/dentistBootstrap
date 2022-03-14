@@ -42,7 +42,7 @@ h3 {
 
 @mixin map {
     height: 300px;
-    width: 400px;
+    width: $mapWidth;
     @media only screen and (max-width: $mapWidth) {
         width: 100vw;
     }
