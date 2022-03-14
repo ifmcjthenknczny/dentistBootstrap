@@ -6,6 +6,7 @@ $sizes: ('s': 576px,
     'xxl': 1400px,
     'toptext': 536px);
 
+$mapWidth: 400px;
 
 body {
     // background-color: mix(white, beige, 60%);
@@ -42,6 +43,9 @@ h3 {
 @mixin map {
     height: 300px;
     width: 400px;
+    @media only screen and (max-width: $mapWidth) {
+        width: 100vw;
+    }
 }
 
 .mapouter {

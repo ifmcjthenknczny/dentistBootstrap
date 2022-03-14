@@ -31,6 +31,12 @@ h3 {
   width: 400px;
 }
 
+@media only screen and (max-width: 400px) {
+  .mapouter {
+    width: 100vw;
+  }
+}
+
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
@@ -38,9 +44,21 @@ h3 {
   width: 400px;
 }
 
+@media only screen and (max-width: 400px) {
+  .gmap_canvas {
+    width: 100vw;
+  }
+}
+
 iframe {
   height: 300px;
   width: 400px;
+}
+
+@media only screen and (max-width: 400px) {
+  iframe {
+    width: 100vw;
+  }
 }
 
 .about__description {
