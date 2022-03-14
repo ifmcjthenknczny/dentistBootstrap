@@ -3,11 +3,14 @@ $sizes: ('s': 576px,
     'm': 768px,
     'l': 992px,
     'xl': 1200px,
-    'xxl': 1400px);
+    'xxl': 1400px,
+    'toptext': 536px);
 
 
 body {
-    background-color: mix(white, beige);
+    // background-color: mix(white, beige, 60%);
+    background-color: mix(white, lightgrey, 95%);
+
 }
 
 h1 {
@@ -15,8 +18,8 @@ h1 {
     font-weight: 300;
     font-family: 'Italianno', cursive;
 
-    @media only screen and (max-width: map-get($sizes, 's')) {
-        font-size: 2em;
+    @media only screen and (max-width: map-get($sizes, 'toptext')) {
+        font-size: 2.1em;
     }
 
     // font-family: 'Mr De Haviland', cursive;
@@ -32,6 +35,8 @@ h3 {
 
 .container {
     background-color: white;
+    // border: 2px solid darken(#dee2e6, 5%);
+    // border-radius: 12px;
 }
 
 @mixin map {
@@ -58,4 +63,11 @@ iframe {
 .about__description {
     text-align: justify;
     text-justify: inter-word;
+}
+
+.footer {
+    font-family: 'PT Sans', sans-serif;
+    &__contact {
+        border-radius: 25px;
+    }
 }
